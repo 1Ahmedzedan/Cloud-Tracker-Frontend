@@ -23,6 +23,7 @@ import PieChart from "./Features/DashBoard/PieChart";
 import ColumnChart from "./Features/DashBoard/ColumnChart";
 import LineChart from "./Features/DashBoard/LineChart";
 import BubbleChart from "./Features/DashBoard/BubbleChart";
+import CsvInstructions from "./pages/Dashboard/CsvInstructions";
 
 const queryClient = new QueryClient({
 	defaultOptions: {
@@ -52,7 +53,7 @@ export default function App() {
 											<Route index element={<Onboarding />} />
 											<Route
 												path="instruction"
-												element={<div>instruction</div>}
+												element={<CsvInstructions />}
 											/>
 											<Route
 												path="manual"
@@ -86,7 +87,7 @@ export default function App() {
 												/>
 												<Route
 													path="bubbleChart"
-													element={<BubbleChart type="full"/>}
+													element={<BubbleChart type="full" />}
 												/>
 												<Route
 													path="notification"
